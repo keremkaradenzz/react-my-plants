@@ -3,7 +3,6 @@ import Button from "../../components/Button";
 import { sorular, bitkiler } from "../../DATA";
 import Answer from "./answers/Answer";
 import './styles.scss';
-import logo from '../../images/nah.jpeg';
 const Questions = () => {
     const [data, setData] = useState([]);
     const [state, setState] = useState(0);
@@ -81,11 +80,9 @@ const Questions = () => {
         {
             plants.length === 0 && state === 5
                 ? <div>İstediğiniz kriterde bitki bulunamadı! Lütfen tekrar seçim yapınız..
-                    <img src={logo} alt="nah" />
                 </div> :
                 state === 5 && <div>
                     <h2>Size sunduğumuz bitkiler :)</h2>
-                    <img src={logo} alt="nah" style={{width:650,height:650}} />
                     {plants.map(item => <ul>
                         <li>{item.bitkiAdi}</li>
                     </ul>)}
