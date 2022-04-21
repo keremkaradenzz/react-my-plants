@@ -1,13 +1,14 @@
 import './App.css';
+import Questions from './pages/questions/Questions';
 
 function App() {
   return (
-    <div className="App">
-      <h1>My Flowers</h1>
-        <div>
-            hello
-        </div>
-    </div>
+    <main className="main">
+      <div className='title'>
+        <h1>My Plant</h1>
+      </div>
+      <Questions/>
+    </main>
   );
 }
 

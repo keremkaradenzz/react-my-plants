@@ -1,0 +1,15 @@
+.my-btn{
+    padding:15px;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    color:#ffff;
+
+    &:disabled{
+        color: gray;
+        opacity: 0.5;
+    }
+}

@@ -1,4 +1,5 @@
 
+
 export const ozellikler = {
     yetenekler: ['radyasyon-emer', 'hava-temizler'],
     tarz: ['col', 'tropik', 'minimal'],
@@ -13,6 +14,40 @@ export const ozellikler = {
     nem: ['yuksek', 'ev']
 
 }
+export const keys = ['form', 'isikIstegi', 'sicaklik', 'bakimIstegi', 'tarz'];
+export const sorular = [
+    {
+        id: 1, 
+        soru: 'Bitkiniz için mekanınızı seçin !' , 
+        siklar:['Ofis-İş Ortamı', 'Ev Ortamı', 'Cafe - Restaurant'],
+        cevap:['dikey', 'daginik,dikey,sarkici', 'dikey,daginik,sarkici']
+    },
+    {
+        id: 2, 
+        soru: 'Bitkinizi kullanacağınız ortam ışık alımı yönünden nasıldır?' , 
+        siklar:['Aydınlık, sürekli ışık alan', 'Yarı aydınlık, belirli saatlerde ışık alan', 'Gölge, ışık almayan'],
+        cevap:['aydinlik', 'yari-aydinlik',  'golge']
+    },
+    {
+        id: 3, 
+        soru: 'Bitkinizi kullanacağınız ortam sıcaklık yönünden nasıldı ?' , 
+        siklar:['Yüksek sıcaklık', 'Orta sıcaklık', 'Düşük sıcaklık'],
+        cevap:['yuksek', 'orta',  'az']
+    },
+    {
+        id: 4, 
+        soru: 'Bitkinizle tahmini ne sıklıkla ilgilenirsiniz?' , 
+        siklar:['Her gün mutlaka kontrol ederim', 'Haftada 1,2 kontrol ederim', 'Aklıma ne zaman gelirse', 'Bakımı ile ilgilenecek hiç zamanım olmaz'],
+        cevap:['cok-bakim,az', 'cok-bakim,az', 'az', 'az']
+    },
+    {
+        id: 5, 
+        soru: 'Bitkiniz mekanınıza nasıl bir hava versin istersiniz ?' , 
+        siklar:['Çöl havası', 'Tropik hava','Bana bitki olsun yeter'],
+        cevap:['col', 'tropik', 'col,tropik,minimal']
+    },
+]
+
 
 export const bitkiler = [
     {
@@ -183,5 +218,158 @@ export const bitkiler = [
         sicaklik:['yuksek'],
         nem: ['ev']
     },
+    {
+        bitkiAdi:'Sansevieria Trifasciata - PAŞA KILICI',
+        yetenekler:['hava-temizler'],
+        tarz: ['col'],
+        hissiyat:['ciddi'],
+        renkli:[],
+        bakimIstegi:['az'],
+        isikIstegi:['aydinlik','yari-aydinlik'],
+        buyume:['yavas'],
+        yaprakOzelligi:['diken'],
+        form:['dikey'],
+        sicaklik:['dusuk'],
+        nem: ['ev']
+    },
+    {
+        bitkiAdi:'Yucca elephantipes - YUKKA',
+        yetenekler:[],
+        tarz: ['col'],
+        hissiyat:['ciddi'],
+        renkli:[],
+        bakimIstegi:['az'],
+        isikIstegi:['aydinlik'],
+        buyume:['yavas'],
+        yaprakOzelligi:['diken','buyuk'],
+        form:['dikey'],
+        sicaklik:['orta'],
+        nem: ['yuksek']
+    },
+    {
+        bitkiAdi:'Aloe Barbadensis Miller - ALOE VERA',
+        yetenekler:['hava-temizler'],
+        tarz: ['tropik','minimal'],
+        hissiyat:['rahat'],
+        renkli:[],
+        bakimIstegi:['az'],
+        isikIstegi:['aydinlik'],
+        buyume:['hizli'],
+        yaprakOzelligi:['diken'],
+        form:['daginik'],
+        sicaklik:['dusuk'],
+        nem: ['ev']
+    },
+    {
+        bitkiAdi:'Euphorbia trigona - SÜT AĞACI',
+        yetenekler:['radyasyon-emer'],
+        tarz: ['col'],
+        hissiyat:['ciddi'],
+        renkli:[],
+        bakimIstegi:['az'],
+        isikIstegi:['aydinlik'],
+        buyume:['hizli'],
+        yaprakOzelligi:['diken','kucuk'],
+        form:['dikey'],
+        sicaklik:['orta'],
+        nem: ['ev']
+    },
+    {
+        bitkiAdi:'Dracena Marginata - MADAGASKAR DRA',
+        yetenekler:['hava-temizler'],
+        tarz: ['col'],
+        hissiyat:['ciddi'],
+        renkli:[],
+        bakimIstegi:['az'],
+        isikIstegi:['aydinlik'],
+        buyume:['orta'],
+        yaprakOzelligi:['diken'],
+        form:['dikey'],
+        sicaklik:['orta'],
+        nem: ['yuksek']
+    },
+    {
+        bitkiAdi:'Pachira Aquatica - ÇİN PARA AĞACI',
+        yetenekler:[],
+        tarz: ['tropik'],
+        hissiyat:['rahat'],
+        renkli:[],
+        bakimIstegi:['az'],
+        isikIstegi:['aydinlik','yari-aydinlik'],
+        buyume:['orta'],
+        yaprakOzelligi:['kucuk'],
+        form:['daginik'],
+        sicaklik:['orta'],
+        nem: ['yuksek']
+    },
+    {
+        bitkiAdi:'Spathiphyllum wallisii - BARIŞ ÇİÇEĞİ',
+        yetenekler:['radyasyon-emer', 'hava-temizler'],
+        tarz: ['tropik'],
+        hissiyat:['rahat'],
+        renkli:['cicekli'],
+        bakimIstegi:['cok'],
+        isikIstegi:['golge','yari-aydinlik'],
+        buyume:['orta'],
+        yaprakOzelligi:['buyuk'],
+        form:['daginik'],
+        sicaklik:['orta'],
+        nem: ['yuksek']
+    },
+    {
+        bitkiAdi:'Anthurium - ANTORYUM',
+        yetenekler:['hava-temizler'],
+        tarz: ['tropik'],
+        hissiyat:['rahat'],
+        renkli:['cicekli'],
+        bakimIstegi:['cok'],
+        isikIstegi:['aydinlik','golge','yari-aydinlik'],
+        buyume:['orta'],
+        yaprakOzelligi:['buyuk'],
+        form:['daginik'],
+        sicaklik:['yuksek'],
+        nem: ['yuksek']
+    },
+    {
+        bitkiAdi:'Pothos - SALON SARMAŞIĞI',
+        yetenekler:['hava-temizler','radyasyon-emer'],
+        tarz: ['tropik'],
+        hissiyat:['rahat'],
+        renkli:[],
+        bakimIstegi:['az'],
+        isikIstegi:['golge','yari-aydinlik'],
+        buyume:['hizli'],
+        yaprakOzelligi:['kucuk'],
+        form:['sarkici'],
+        sicaklik:['dusuk'],
+        nem: ['ev']
+    },
+    {
+        bitkiAdi:'Nephrolepsis exaltata - AŞK MERDİVENİ',
+        yetenekler:['hava-temizler','radyasyon-emer'],
+        tarz: ['tropik'],
+        hissiyat:['rahat'],
+        renkli:[],
+        bakimIstegi:['cok'],
+        isikIstegi:['yari-aydinlik','golge'],
+        buyume:['hizli'],
+        yaprakOzelligi:['kucuk'],
+        form:['sarkici'],
+        sicaklik:['dusuk'],
+        nem: ['yuksek']
+    },
+    {
+        bitkiAdi:'Chamaedora elegans- DAĞ PALMİYESİ',
+        yetenekler:[],
+        tarz: ['tropik','minimal'],
+        hissiyat:['rahat'],
+        renkli:[],
+        bakimIstegi:['cok'],
+        isikIstegi:['yari-aydinlik'],
+        buyume:['orta'],
+        yaprakOzelligi:['kucuk'],
+        form:['daginik'],
+        sicaklik:['dusuk'],
+        nem: ['yuksek']
+    },
 ]
-
