@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import { sorular, bitkiler } from "../../DATA";
 import Answer from "./answers/Answer";
 import './styles.scss';
+import logo from '../../images/nah.jpeg';
 const Questions = () => {
     const [data, setData] = useState([]);
     const [state, setState] = useState(0);
@@ -79,23 +80,26 @@ const Questions = () => {
         )}
         {
             plants.length === 0 && state === 5
-                ? <div>İstediğiniz kriterde bitki bulunamadı! Lütfen tekrar seçim yapınız..</div> :
+                ? <div>İstediğiniz kriterde bitki bulunamadı! Lütfen tekrar seçim yapınız..
+                    <img src={logo} alt="nah" />
+                </div> :
                 state === 5 && <div>
                     <h2>Size sunduğumuz bitkiler :)</h2>
+                    <img src={logo} alt="nah" style={{width:650,height:650}} />
                     {plants.map(item => <ul>
-                    <li>{item.bitkiAdi}</li>
-                </ul>)}
+                        <li>{item.bitkiAdi}</li>
+                    </ul>)}
                 </div>
-               
+
         }
         {
             state !== 5 ?
-            <div className="btn-group">
-                <Button name="Geri" onClick={onPrev} disabled={state === 0} />
-                <Button name="ileri" onClick={onNext} disabled={state === sorular.length} />
-            </div> : state === 5 &&   <div style={{display:"flex", justifyContent:"center", marginTop:50}}><Button name="Başa Dön" onClick={()=> setState(0)} /></div> 
+                <div className="btn-group">
+                    <Button name="Geri" onClick={onPrev} disabled={state === 0} />
+                    <Button name="ileri" onClick={onNext} disabled={state === sorular.length} />
+                </div> : state === 5 && <div style={{ display: "flex", justifyContent: "center", marginTop: 50 }}><Button name="Başa Dön" onClick={() => setState(0)} /></div>
         }
-        
+
 
 
     </div>
