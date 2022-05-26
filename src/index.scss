@@ -2,8 +2,9 @@
 
 body{
   margin:0;
-  padding:0;
+  padding:10px;
   box-sizing: border-box;
+
   font-family: 'Kalam', cursive;
   background-color: #6fbf73;
   color:#ffff;
@@ -13,7 +14,7 @@ body{
      justify-content: center;
      align-items: center;
      flex-direction: column;
-     height: 100vh;
+     height: 100%;
      > .title  > h1{
        font-size: 60px;
      }

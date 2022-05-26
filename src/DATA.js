@@ -1,4 +1,4 @@
-
+import images from './images/images';
 
 export const ozellikler = {
     yetenekler: ['radyasyon-emer', 'hava-temizler'],
@@ -62,7 +62,8 @@ export const bitkiler = [
     yaprakOzelligi:['buyuk'],
     form:['daginik'],
     sicaklik:['orta'],
-    nem: ['yuksek']
+    nem: ['yuksek'],
+    imageUrl: images[8]
     },
     {
         bitkiAdi:'Ficus elastica - KAUÇUK',
@@ -76,7 +77,8 @@ export const bitkiler = [
         yaprakOzelligi:['buyuk'],
         form:['dikey'],
         sicaklik:['orta'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[13]
     },
     {
         bitkiAdi:'Codiaeum variegatum - KROTON',
@@ -90,7 +92,8 @@ export const bitkiler = [
         yaprakOzelligi:['buyuk'],
         form:['dikey'],
         sicaklik:['az'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[14]
     },
     {
         bitkiAdi:'Calathea Ornata- DUA ÇİÇEĞİ',
@@ -104,7 +107,9 @@ export const bitkiler = [
         yaprakOzelligi:['buyuk'],
         form:['daginik'],
         sicaklik:['az'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[7]
+
     },
     {
         bitkiAdi:'Pilea Peperomioides-ÇİN PARA- PİLEA',
@@ -118,7 +123,8 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['daginik'],
         sicaklik:['orta'],
-        nem: ['ev']
+        nem: ['ev'],
+        imageUrl: images[18]
     },
     {
         bitkiAdi:'Zamioculcas Zamiifolia - ZAMİA',
@@ -132,7 +138,8 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['dikey'],
         sicaklik:['dusuk'],
-        nem: ['ev']
+        nem: ['ev'],
+        imageUrl: images[22]
     },
     {
         bitkiAdi:'Stralitzia Nicolai -STARLİÇE',
@@ -146,7 +153,8 @@ export const bitkiler = [
         yaprakOzelligi:['buyuk'],
         form:['dikey'],
         sicaklik:['yuksek'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[13]
     },
     {
         bitkiAdi:'Dypsis Lutescens -AREKA PALMİYESİ',
@@ -160,7 +168,8 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['daginik'],
         sicaklik:['orta'],
-        nem: ['ev']
+        nem: ['ev'],
+        imageUrl: images[3]
     },
     {
         bitkiAdi:'Asparagus plumosus - KUŞKONMAZ',
@@ -174,7 +183,8 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['daginik'],
         sicaklik:['az'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[15]
     },
     {
         bitkiAdi:'Ficus benjamina - BENJAMİN',
@@ -188,7 +198,8 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['daginik'],
         sicaklik:['orta'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[6]
     },
     {
         bitkiAdi:'Dieffenbachia Seguine - DİFENBAHYA',
@@ -202,7 +213,8 @@ export const bitkiler = [
         yaprakOzelligi:['buyuk'],
         form:['daginik'],
         sicaklik:['orta'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[9]
     },
     {
         bitkiAdi:'Opuntia M. Albata - KAKTÜS TAVŞAN K.',
@@ -216,7 +228,8 @@ export const bitkiler = [
         yaprakOzelligi:['diken'],
         form:['dikey'],
         sicaklik:['yuksek'],
-        nem: ['ev']
+        nem: ['ev'],
+        imageUrl: images[12]
     },
     {
         bitkiAdi:'Sansevieria Trifasciata - PAŞA KILICI',
@@ -230,7 +243,8 @@ export const bitkiler = [
         yaprakOzelligi:['diken'],
         form:['dikey'],
         sicaklik:['dusuk'],
-        nem: ['ev']
+        nem: ['ev'],
+        imageUrl: images[17]
     },
     {
         bitkiAdi:'Yucca elephantipes - YUKKA',
@@ -244,7 +258,8 @@ export const bitkiler = [
         yaprakOzelligi:['diken','buyuk'],
         form:['dikey'],
         sicaklik:['orta'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[21]
     },
     {
         bitkiAdi:'Aloe Barbadensis Miller - ALOE VERA',
@@ -258,7 +273,8 @@ export const bitkiler = [
         yaprakOzelligi:['diken'],
         form:['daginik'],
         sicaklik:['dusuk'],
-        nem: ['ev']
+        nem: ['ev'],
+        imageUrl: images[0]
     },
     {
         bitkiAdi:'Euphorbia trigona - SÜT AĞACI',
@@ -272,7 +288,8 @@ export const bitkiler = [
         yaprakOzelligi:['diken','kucuk'],
         form:['dikey'],
         sicaklik:['orta'],
-        nem: ['ev']
+        nem: ['ev'],
+        imageUrl:images[11]
     },
     {
         bitkiAdi:'Dracena Marginata - MADAGASKAR DRA',
@@ -286,7 +303,8 @@ export const bitkiler = [
         yaprakOzelligi:['diken'],
         form:['dikey'],
         sicaklik:['orta'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[10]
     },
     {
         bitkiAdi:'Pachira Aquatica - ÇİN PARA AĞACI',
@@ -300,7 +318,8 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['daginik'],
         sicaklik:['orta'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[16]
     },
     {
         bitkiAdi:'Spathiphyllum wallisii - BARIŞ ÇİÇEĞİ',
@@ -314,7 +333,8 @@ export const bitkiler = [
         yaprakOzelligi:['buyuk'],
         form:['daginik'],
         sicaklik:['orta'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[5]
     },
     {
         bitkiAdi:'Anthurium - ANTORYUM',
@@ -328,7 +348,8 @@ export const bitkiler = [
         yaprakOzelligi:['buyuk'],
         form:['daginik'],
         sicaklik:['yuksek'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[1]
     },
     {
         bitkiAdi:'Pothos - SALON SARMAŞIĞI',
@@ -342,7 +363,8 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['sarkici'],
         sicaklik:['dusuk'],
-        nem: ['ev']
+        nem: ['ev'],
+        imageUrl: images[19]
     },
     {
         bitkiAdi:'Nephrolepsis exaltata - AŞK MERDİVENİ',
@@ -356,7 +378,8 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['sarkici'],
         sicaklik:['dusuk'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl: images[4]
     },
     {
         bitkiAdi:'Chamaedora elegans- DAĞ PALMİYESİ',
@@ -370,6 +393,7 @@ export const bitkiler = [
         yaprakOzelligi:['kucuk'],
         form:['daginik'],
         sicaklik:['dusuk'],
-        nem: ['yuksek']
+        nem: ['yuksek'],
+        imageUrl:images[2]
     },
 ]

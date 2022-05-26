@@ -3,6 +3,7 @@ import Button from "../../components/Button";
 import { sorular, bitkiler } from "../../DATA";
 import Answer from "./answers/Answer";
 import './styles.scss';
+
 const Questions = () => {
     const [data, setData] = useState([]);
     const [state, setState] = useState(0);
@@ -15,8 +16,6 @@ const Questions = () => {
         if (state === 5) {
             let keys = Object.keys(results);
             let values = Object.values(results);
-            console.log('values', values)
-            console.log('keys', keys)
             let datas = []
             for (let bitki of bitkiler) {
                 let count = 0;
@@ -79,11 +78,12 @@ const Questions = () => {
         )}
         {
             plants.length === 0 && state === 5
-                ? <div>İstediğiniz kriterde bitki bulunamadı! Lütfen tekrar seçim yapınız..
+                ? <div className="result">İstediğiniz kriterde bitki bulunamadı! Lütfen tekrar seçim yapınız..
                 </div> :
-                state === 5 && <div>
+                state === 5 && <div className="result">
                     <h2>Size sunduğumuz bitkiler :)</h2>
-                    {plants.map(item => <ul>
+                    {plants.map((item, index) => <ul key={index}>
+                        <li><img src={item.imageUrl} alt={item.bitkiAdi} width='100px' height='100px'/></li>
                         <li>{item.bitkiAdi}</li>
                     </ul>)}
                 </div>
